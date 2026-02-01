@@ -1,1 +1,87 @@
-This is a Areej Zai
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Areej Zai Nawaz | Portfolio</title>
+
+  <style>
+    :root {
+      --primary: #1f2933;
+      --secondary: #111827;
+      --accent: #c89b3c;
+      --light: #f9fafb;
+      --gray: #6b7280;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e5e7eb;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      display: block;
+      margin: 10p
