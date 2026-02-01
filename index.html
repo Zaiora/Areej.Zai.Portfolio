@@ -84,4 +84,174 @@
       height: 3px;
       background: var(--accent);
       display: block;
-      margin: 10p
+      margin: 10px auto 0;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: var(--gray);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: var(--secondary);
+    }
+
+    .card p {
+      color: var(--gray);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      color: var(--gray);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #b68a2f;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: #d1d5db;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Areej Zai Nawaz</h1>
+    <p>Entrepreneur | Product Creator | Real Estate & Online Business</p>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">What I Do</a>
+    <a href="#ventures">Ventures</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about">
+      I am Areej Zai Nawaz, an entrepreneur focused on building impactful products,
+      developing modern real estate concepts, and creating scalable online business
+      platforms. My work blends strategy, creativity, and long-term value creation.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>What I Do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Product Creation</h3>
+        <p>
+          Designing and launching innovative products with a focus on usability,
+          branding, and market fit.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Real Estate & Malls</h3>
+        <p>
+          Developing and managing commercial real estate projects, shopping malls,
+          and investment opportunities.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Online Business</h3>
+        <p>
+          Building digital platforms, e-commerce ventures, and scalable online
+          business models.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES -->
+  <section id="ventures">
+    <h2>Ventures & Vision</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>AZN Ventures</h3>
+        <p>
+          A multi-domain business initiative focused on innovation, growth,
+          and sustainable value creation.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Future Projects</h3>
+        <p>
+          Expanding into smart real estate, premium shopping experiences,
+          and global online marketplaces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>
+        Interested in collaboration, partnerships, or business opportunities?
+      </p>
+      <a class="btn" href="mailto:your-email@example.com">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Areej Zai Nawaz. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
